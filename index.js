@@ -4,7 +4,7 @@ const breakElement = document.querySelector('.twenty-second-break');
 const twentyElement = document.querySelector('.twenty-minutes');
 
 
-
+//check
 function start(){
     var sec = 0;
     var min = 0;
