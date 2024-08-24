@@ -1,0 +1,12 @@
+#timer-container {
+    display: flex;
+    background-color: rgb(255, 127, 234);
+    width: 10%;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#timer {
+    font-size: xx-large;
+}
