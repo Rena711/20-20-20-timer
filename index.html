@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' http://localhost:* http://127.0.0.1:*; style-src 'self' 'unsafe-inline';">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>initial</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="timer-container">
@@ -12,8 +16,8 @@
             00:00
         </div>
         <div class="twenty-minutes">
-            <button onclick=start()>start &#9658</button>
-            <button onclick=pause()>pause &#9208</button>  
+            <button id="startButten" >start</button>
+            <button id="pauseButten" >pause</button>  
         </div>
     </div>
     
