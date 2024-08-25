@@ -27,7 +27,7 @@ function start(){
         }
 
 
-    }, 1000)
+    }, 10)
 }
 
 function pause(){

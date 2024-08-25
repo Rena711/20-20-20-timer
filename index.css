@@ -1,6 +1,7 @@
 #timer-container {
     display: flex;
-    background-color: rgb(255, 127, 234);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7350378383775384) 0%, rgba(97,97,143,1) 35%, rgba(109,156,166,1) 100%);
     width: 10%;
     align-items: center;
     flex-direction: column;
@@ -9,4 +10,13 @@
 
 #timer {
     font-size: xx-large;
+}
+
+button {
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blueviolet;
 }
