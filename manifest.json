@@ -1,12 +1,20 @@
 {
     "name": "20-20-20 Timer",  
-    "version": "1.0.7",
+    "version": "1.1.0",
     "description": "Following the 20-20-20 rule, this extension aims to reduce eye strain by reminding you to take a 20-second break every 20 minutes of screen time. After 20 minutes of work, the timer will prompt you to look away from your screen and focus on something 20 feet away for 20 seconds. Stay productive while keeping your eyes healthy!",
     "manifest_version": 3,
     "author": "Serena Sing",
     "action": {
         "default_popup": "index.html",
         "default_title": "20-20-20 Timer"
-    }
-
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
+    },
+    "permissions": [
+        "alarms"
+    ]
 }
