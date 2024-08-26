@@ -1,35 +1,52 @@
 #timer-container {
     display: flex;
     background: rgb(76,98,168);
-    background: radial-gradient(circle, rgba(76,98,168,0.7350378383775384) 0%, rgba(47,66,97,1) 100%);
-    width: 200px;
+    background: radial-gradient(circle, rgba(151, 114, 236, 0.735) 0%, rgb(72, 93, 128) 100%);
+    width: 250px;
     align-items: center;
-    flex-direction: column;
     padding: 10px;
+}
+
+.text {
+    color: antiquewhite;
+    margin-left: 20px;  
 }
 
 body {
     margin: 0;
 }
 
-#timer {
-    font-weight: 600;
-    font-style: normal;
-    font-size: x-large;
-    color: rgb(226, 216, 203);
+.play-pause {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-  
 
 button {
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
     background-color: transparent;
-    border-color: rgb(87, 103, 118);
-    border-style:groove;
+    border-color: rgb(177, 195, 211);
+    border-style:solid;
+    color: antiquewhite;
+    margin-left: 26px;
+    margin-bottom: 8px;
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.704);
+    background-color: rgba(39, 51, 93, 0.704);
+}
+
+#pauseButten {
+    margin-right: 19px;
+    border-radius: 13px;
+    font-size:11px;
+    background-color: rgb(54, 54, 83);
+    padding: 4px;
+}
+
+#pauseButten:hover {
+    background-color: rgba(131, 149, 213, 0.704);
+    border-color: rgb(32, 32, 65);
 }
